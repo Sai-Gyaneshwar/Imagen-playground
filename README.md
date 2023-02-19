@@ -1,6 +1,6 @@
 <p align="center">
 <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/woman-artist_1f469-200d-1f3a8.png" width="60" alt="Dali">
-  <h2 align="center">Text-to-image Generation with Imagen</h2>
+  <h2 align="center">Text-to-Image Generation with Imagen</h2>
 </p>
 
 A playground for text-to-image enthusiasts using [Stable Diffusion V2](https://stability.ai/blog/stable-diffusion-v2-release).
