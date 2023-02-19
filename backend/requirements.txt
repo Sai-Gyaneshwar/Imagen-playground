@@ -7,4 +7,4 @@ flask_cloudflared
 accelerate
 transformers
 diffusers
-minimagen
+imagen
