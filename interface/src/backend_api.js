@@ -2,7 +2,7 @@ import JsonBigint from "json-bigint";
 
 const REQUEST_TIMEOUT_SEC = 60000
 
-export async function callDalleService(backendUrl, text, numImages) {
+export async function callImagenService(backendUrl, text, numImages) {
     const queryStartTime = new Date()
     const response = await Promise.race([
         (await fetch(backendUrl + `/generate`, {

@@ -4,7 +4,7 @@ import {
     Card, CardContent, FormControl, FormHelperText,
     InputLabel, MenuItem, Select, Typography, Link
 } from "@material-ui/core";
-import { callDalleService } from "./backend_api";
+import { callImagenService } from "./backend_api";
 import GeneratedImageList from "./GeneratedImageList";
 import TextPromptInput from "./TextPromptInput";
 
@@ -88,10 +88,10 @@ const App = ({ classes }) => {
     const validBackendUrl = isValidBackendEndpoint && backendUrl
 
     function enterPressedCallback(promptText) {
-        console.log('API call to DALL-E web service with the following prompt [' + promptText + ']');
+        console.log('API call to Imagen web service with the following prompt [' + promptText + ']');
         setApiError('')
         setIsFetchingImgs(true)
-        callDalleService(backendUrl, promptText, imagesPerQuery).then((response) => {
+        callImagenService(backendUrl, promptText, imagesPerQuery).then((response) => {
             setQueryTime(response['executionTime'])
             setGeneratedImages(response['serverResponse']['generatedImgs'])
             setGeneratedImagesFormat(response['serverResponse']['generatedImgsFormat'])
@@ -134,7 +134,7 @@ const App = ({ classes }) => {
         <div className={classes.root}>
             <div className={classes.title}>
                 <Typography variant="h3">
-                    Text-to-image Playground <span role="img" aria-label="sparks-emoji">✨</span>
+                    Text-to-image with Imagen Playground <span role="img" aria-label="sparks-emoji">✨</span>
                 </Typography>
             </div>
 
