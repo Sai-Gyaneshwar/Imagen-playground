@@ -3,7 +3,7 @@ FROM nvidia/cuda:11.4.3-cudnn8-devel-ubuntu20.04
 # expose
 EXPOSE 8080
 
-# set working directory
+# set working directorys
 WORKDIR /app
 
 # install pip

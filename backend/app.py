@@ -51,7 +51,7 @@ def generate_images_api():
     response = {'generatedImgs': returned_generated_images,
     'generatedImgsFormat': args.img_format}
     return jsonify(response)
-
+    #get request
 
 @app.route("/", methods=["GET"])
 @cross_origin()

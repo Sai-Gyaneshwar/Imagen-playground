@@ -13,7 +13,7 @@ class StableDiffusionWrapper:
             pipe.scheduler.config)
         self.pipe = pipe.to("cuda")
 
-            
+    #sample        
     def generate_images(self, text_prompt: str, num_images: int):
         prompt = [text_prompt] * num_images
         images = self.pipe(prompt, num_inference_steps=10).images
