@@ -1,23 +1,15 @@
 <p align="center">
 <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/woman-artist_1f469-200d-1f3a8.png" width="60" alt="Dali">
-  <h2 align="center">Text-to-image Playground (fka DALL-E Playground)</h2>
+  <h2 align="center">Text-to-image Generation with Imagen</h2>
 </p>
 
 A playground for text-to-image enthusiasts using [Stable Diffusion V2](https://stability.ai/blog/stable-diffusion-v2-release).
 
-*<h3>November 2022, major update</h3>*
-The original version of this repository used [DALL-E Mini](https://github.com/borisdayma/dalle-mini). With the recent release of Stable Diffusion (SD) V2 and the ease of implementation - this repository has moved to use SD over DALL-E Mini.
-
-<br>_Also see [Whisper Playground](https://github.com/saharmor/whisper-playground) - a playground for building real-time speech2text web apps using OpenAI's Whisper_
-
-
-![SD repo demo](https://user-images.githubusercontent.com/6180201/204181184-b257d832-d5f6-460d-8193-aaaf25214015.gif)
-
 ## Fast usage
 
-You can tinker with the DALL-E playground using a Github-hosted frontend. Follow these steps:
+You can tinker with the IMAGEN playground using a Github-hosted frontend. Follow these steps:
 
-1. Run the DALL-E backend using Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/saharmor/dalle-playground/blob/main/backend/dalle_playground_backend.ipynb)
+1. Run the IMAGEN backend using Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/saharmor/dalle-playground/blob/main/backend/dalle_playground_backend.ipynb)
 2. Copy the URL from the output of the last executed cell. Search for the line stating with `Your url is:`.
 3. **Wait for the backend to fully load**, this should take ~2min and you should see `--> Image generation server is up and running!`
 5. Browse https://saharmor.github.io/dalle-playground/?backendUrl=https://XXXX.trycloudflare.com where the `backendUrl` query parameter should be the url from the previous step
@@ -27,7 +19,7 @@ You can tinker with the DALL-E playground using a Github-hosted frontend. Follow
 
 ## Local development
 
-Follow these steps in case you'd like to clone and run the DALL-E Playground locally:
+Follow these steps in case you'd like to clone and run the IMAGEN Playground locally:
 
 1. Clone or fork this repository
 2. Create a virtual environment `cd backend && python3 -m venv ENV_NAME`
@@ -62,7 +54,7 @@ WSL2 installs are fairly bare bones, expect to install packages like `npm`, `pyt
    models and other dependencies are downloaded only once, and then cached.
 4. Copy backend's url from step 2 and paste it in the backend's url input within the web app.
    
-   webapp at `http://localhost:3000/dalle-playground`
+   webapp at `http://localhost:3000/imagen-playground`
 
 ## Acknowledgements
 The original reposistory used  @borisdayma's DALL-E Mini.
